@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+    datasourse:
+      url: ${DB_url}
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
